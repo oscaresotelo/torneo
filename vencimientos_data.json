@@ -1,0 +1,33 @@
+{
+  "servicios": [
+    {
+      "nombre": "edet",
+      "tipo": "Electricidad",
+      "fecha_vencimiento": "2026-04-20",
+      "monto": "",
+      "repeticion": "Mensual",
+      "notas": ""
+    },
+    {
+      "nombre": "prueba",
+      "tipo": "Electricidad",
+      "fecha_vencimiento": "2026-03-12",
+      "monto": "1233",
+      "repeticion": "Mensual",
+      "notas": "ninguna"
+    }
+  ],
+  "destinatarios": [
+    {
+      "nombre": "oscar",
+      "email": "oscaresotelo@gmail.com"
+    }
+  ],
+  "config_email": {
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "email_from": "oscaresotelo@gmail.com",
+    "password": "khmj zyxw gesl xwbl",
+    "dias_anticipacion": 3
+  }
+}
