@@ -4,6 +4,12 @@ import time
 import json
 from datetime import datetime, timedelta
 import random
+import os
+
+# ─── FORCE DARK THEME ──────────────────────────────────────────────────────────
+os.makedirs(".streamlit", exist_ok=True)
+with open(".streamlit/config.toml", "w") as _f:
+    _f.write("[theme]\nbase = \"dark\"\n")
 
 # ─── PAGE CONFIG ───────────────────────────────────────────────────────────────
 st.set_page_config(
@@ -638,7 +644,7 @@ with st.sidebar:
 # ─── MAIN HEADER ───────────────────────────────────────────────────────────────
 import base64, os
 
-_logo_path = "poker.jpg"
+_logo_path = "poker.png"
 _logo_b64 = ""
 if os.path.exists(_logo_path):
     with open(_logo_path, "rb") as _f:
@@ -647,7 +653,7 @@ if os.path.exists(_logo_path):
 if _logo_b64:
     st.markdown(f"""
     <div style="text-align:center; padding:0.8rem 0 0.4rem; border-bottom:2px solid #d4af37; margin-bottom:1.5rem;">
-        <img src="data:image/jpeg;base64,{_logo_b64}"
+        <img src="data:image/png;base64,{_logo_b64}"
              style="max-height:130px; max-width:100%; object-fit:contain;
                     filter:drop-shadow(0 0 18px rgba(212,175,55,0.5));" />
     </div>
