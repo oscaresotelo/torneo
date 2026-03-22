@@ -1,0 +1,694 @@
+{
+  "players": [],
+  "bets": [],
+  "blind_levels": [
+    {
+      "level": 1,
+      "small": 25,
+      "big": 50,
+      "ante": 0,
+      "duration": 15
+    },
+    {
+      "level": 2,
+      "small": 50,
+      "big": 100,
+      "ante": 0,
+      "duration": 15
+    },
+    {
+      "level": 3,
+      "small": 75,
+      "big": 150,
+      "ante": 25,
+      "duration": 15
+    },
+    {
+      "level": 4,
+      "small": 100,
+      "big": 200,
+      "ante": 25,
+      "duration": 15
+    },
+    {
+      "level": 5,
+      "small": 150,
+      "big": 300,
+      "ante": 50,
+      "duration": 15
+    },
+    {
+      "level": 6,
+      "small": 200,
+      "big": 400,
+      "ante": 50,
+      "duration": 15
+    },
+    {
+      "level": 7,
+      "small": 300,
+      "big": 600,
+      "ante": 75,
+      "duration": 15
+    },
+    {
+      "level": 8,
+      "small": 400,
+      "big": 800,
+      "ante": 100,
+      "duration": 15
+    },
+    {
+      "level": 9,
+      "small": 500,
+      "big": 1000,
+      "ante": 100,
+      "duration": 20
+    },
+    {
+      "level": 10,
+      "small": 600,
+      "big": 1200,
+      "ante": 200,
+      "duration": 20
+    },
+    {
+      "level": 11,
+      "small": 800,
+      "big": 1600,
+      "ante": 200,
+      "duration": 20
+    },
+    {
+      "level": 12,
+      "small": 1000,
+      "big": 2000,
+      "ante": 300,
+      "duration": 20
+    },
+    {
+      "level": 13,
+      "small": 1500,
+      "big": 3000,
+      "ante": 400,
+      "duration": 20
+    },
+    {
+      "level": 14,
+      "small": 2000,
+      "big": 4000,
+      "ante": 500,
+      "duration": 25
+    },
+    {
+      "level": 15,
+      "small": 3000,
+      "big": 6000,
+      "ante": 6000,
+      "duration": 25
+    },
+    {
+      "level": 16,
+      "small": 4000,
+      "big": 8000,
+      "ante": 8000,
+      "duration": 25
+    },
+    {
+      "level": 17,
+      "small": 5000,
+      "big": 10000,
+      "ante": 10000,
+      "duration": 25
+    },
+    {
+      "level": 18,
+      "small": 6000,
+      "big": 12000,
+      "ante": 12000,
+      "duration": 25
+    },
+    {
+      "level": 19,
+      "small": 7000,
+      "big": 14000,
+      "ante": 14000,
+      "duration": 25
+    },
+    {
+      "level": 20,
+      "small": 8000,
+      "big": 16000,
+      "ante": 16000,
+      "duration": 25
+    },
+    {
+      "level": 21,
+      "small": 10000,
+      "big": 20000,
+      "ante": 20000,
+      "duration": 25
+    },
+    {
+      "level": 22,
+      "small": 12000,
+      "big": 24000,
+      "ante": 24000,
+      "duration": 25
+    },
+    {
+      "level": 23,
+      "small": 15000,
+      "big": 30000,
+      "ante": 30000,
+      "duration": 25
+    },
+    {
+      "level": 24,
+      "small": 20000,
+      "big": 40000,
+      "ante": 40000,
+      "duration": 25
+    },
+    {
+      "level": 25,
+      "small": 25000,
+      "big": 50000,
+      "ante": 50000,
+      "duration": 25
+    },
+    {
+      "level": 26,
+      "small": 30000,
+      "big": 60000,
+      "ante": 60000,
+      "duration": 25
+    },
+    {
+      "level": 27,
+      "small": 40000,
+      "big": 80000,
+      "ante": 80000,
+      "duration": 25
+    },
+    {
+      "level": 28,
+      "small": 50000,
+      "big": 100000,
+      "ante": 100000,
+      "duration": 25
+    },
+    {
+      "level": 29,
+      "small": 60000,
+      "big": 120000,
+      "ante": 120000,
+      "duration": 25
+    },
+    {
+      "level": 30,
+      "small": 75000,
+      "big": 150000,
+      "ante": 150000,
+      "duration": 25
+    },
+    {
+      "level": 31,
+      "small": 100000,
+      "big": 200000,
+      "ante": 200000,
+      "duration": 25
+    },
+    {
+      "level": 32,
+      "small": 125000,
+      "big": 250000,
+      "ante": 250000,
+      "duration": 25
+    },
+    {
+      "level": 33,
+      "small": 150000,
+      "big": 300000,
+      "ante": 300000,
+      "duration": 25
+    },
+    {
+      "level": 34,
+      "small": 200000,
+      "big": 400000,
+      "ante": 400000,
+      "duration": 25
+    },
+    {
+      "level": 35,
+      "small": 250000,
+      "big": 500000,
+      "ante": 500000,
+      "duration": 25
+    }
+  ],
+  "current_level": 0,
+  "elapsed_seconds": 0,
+  "level_duration": 15,
+  "tournament_started": false,
+  "tournament_name": "LV POKER ROOM",
+  "buy_in": 50,
+  "starting_chips": 10000,
+  "rebuy_allowed": true,
+  "rebuy_chips": 5000,
+  "rebuy_cost": 30,
+  "alerts": [],
+  "hand_count": 0,
+  "break_active": false,
+  "break_duration": 10,
+  "break_elapsed": 0,
+  "player_id_counter": 1,
+  "sound_muted": false,
+  "tournament_start_time": null,
+  "total_elapsed_seconds": 0,
+  "prize_percentages": {
+    "2": [
+      {
+        "place": 1,
+        "pct": 70.0
+      },
+      {
+        "place": 2,
+        "pct": 30.0
+      }
+    ],
+    "4": [
+      {
+        "place": 1,
+        "pct": 60.0
+      },
+      {
+        "place": 2,
+        "pct": 30.0
+      },
+      {
+        "place": 3,
+        "pct": 10.0
+      }
+    ],
+    "6": [
+      {
+        "place": 1,
+        "pct": 50.0
+      },
+      {
+        "place": 2,
+        "pct": 30.0
+      },
+      {
+        "place": 3,
+        "pct": 20.0
+      }
+    ],
+    "32": [
+      {
+        "place": 1,
+        "pct": 45.0
+      },
+      {
+        "place": 2,
+        "pct": 27.0
+      },
+      {
+        "place": 3,
+        "pct": 17.0
+      },
+      {
+        "place": 4,
+        "pct": 11.0
+      }
+    ],
+    "40": [
+      {
+        "place": 1,
+        "pct": 41.0
+      },
+      {
+        "place": 2,
+        "pct": 25.0
+      },
+      {
+        "place": 3,
+        "pct": 15.0
+      },
+      {
+        "place": 4,
+        "pct": 11.0
+      },
+      {
+        "place": 5,
+        "pct": 8.0
+      }
+    ],
+    "48": [
+      {
+        "place": 1,
+        "pct": 39.0
+      },
+      {
+        "place": 2,
+        "pct": 23.0
+      },
+      {
+        "place": 3,
+        "pct": 14.0
+      },
+      {
+        "place": 4,
+        "pct": 10.0
+      },
+      {
+        "place": 5,
+        "pct": 8.0
+      },
+      {
+        "place": 6,
+        "pct": 6.0
+      }
+    ],
+    "56": [
+      {
+        "place": 1,
+        "pct": 37.0
+      },
+      {
+        "place": 2,
+        "pct": 22.0
+      },
+      {
+        "place": 3,
+        "pct": 13.5
+      },
+      {
+        "place": 4,
+        "pct": 9.5
+      },
+      {
+        "place": 5,
+        "pct": 7.5
+      },
+      {
+        "place": 6,
+        "pct": 6.0
+      },
+      {
+        "place": 7,
+        "pct": 4.5
+      }
+    ],
+    "64": [
+      {
+        "place": 1,
+        "pct": 36.0
+      },
+      {
+        "place": 2,
+        "pct": 21.15
+      },
+      {
+        "place": 3,
+        "pct": 13.25
+      },
+      {
+        "place": 4,
+        "pct": 9.0
+      },
+      {
+        "place": 5,
+        "pct": 7.0
+      },
+      {
+        "place": 6,
+        "pct": 5.5
+      },
+      {
+        "place": 7,
+        "pct": 4.5
+      },
+      {
+        "place": 8,
+        "pct": 3.6
+      }
+    ],
+    "72": [
+      {
+        "place": 1,
+        "pct": 35.0
+      },
+      {
+        "place": 2,
+        "pct": 20.0
+      },
+      {
+        "place": 3,
+        "pct": 12.25
+      },
+      {
+        "place": 4,
+        "pct": 8.75
+      },
+      {
+        "place": 5,
+        "pct": 6.75
+      },
+      {
+        "place": 6,
+        "pct": 5.25
+      },
+      {
+        "place": 7,
+        "pct": 4.5
+      },
+      {
+        "place": 8,
+        "pct": 4.0
+      },
+      {
+        "place": 9,
+        "pct": 3.5
+      }
+    ],
+    "80": [
+      {
+        "place": 1,
+        "pct": 34.0
+      },
+      {
+        "place": 2,
+        "pct": 19.5
+      },
+      {
+        "place": 3,
+        "pct": 12.2
+      },
+      {
+        "place": 4,
+        "pct": 8.25
+      },
+      {
+        "place": 5,
+        "pct": 6.25
+      },
+      {
+        "place": 6,
+        "pct": 5.0
+      },
+      {
+        "place": 7,
+        "pct": 4.4
+      },
+      {
+        "place": 8,
+        "pct": 4.0
+      },
+      {
+        "place": 9,
+        "pct": 3.4
+      },
+      {
+        "place": 10,
+        "pct": 3.0
+      }
+    ],
+    "88": [
+      {
+        "place": 1,
+        "pct": 32.25
+      },
+      {
+        "place": 2,
+        "pct": 19.5
+      },
+      {
+        "place": 3,
+        "pct": 12.125
+      },
+      {
+        "place": 4,
+        "pct": 8.2
+      },
+      {
+        "place": 5,
+        "pct": 6.25
+      },
+      {
+        "place": 6,
+        "pct": 5.0
+      },
+      {
+        "place": 7,
+        "pct": 4.15
+      },
+      {
+        "place": 8,
+        "pct": 3.5
+      },
+      {
+        "place": 9,
+        "pct": 3.225
+      },
+      {
+        "place": 10,
+        "pct": 3.0
+      },
+      {
+        "place": 11,
+        "pct": 2.8
+      }
+    ],
+    "96": [
+      {
+        "place": 1,
+        "pct": 31.725
+      },
+      {
+        "place": 2,
+        "pct": 19.0
+      },
+      {
+        "place": 3,
+        "pct": 12.0
+      },
+      {
+        "place": 4,
+        "pct": 7.75
+      },
+      {
+        "place": 5,
+        "pct": 6.0
+      },
+      {
+        "place": 6,
+        "pct": 4.75
+      },
+      {
+        "place": 7,
+        "pct": 4.0
+      },
+      {
+        "place": 8,
+        "pct": 3.5
+      },
+      {
+        "place": 9,
+        "pct": 3.173
+      },
+      {
+        "place": 10,
+        "pct": 2.9
+      },
+      {
+        "place": 11,
+        "pct": 2.7
+      },
+      {
+        "place": 12,
+        "pct": 2.502
+      }
+    ],
+    "104": [
+      {
+        "place": 1,
+        "pct": 30.5
+      },
+      {
+        "place": 2,
+        "pct": 18.75
+      },
+      {
+        "place": 3,
+        "pct": 11.5
+      },
+      {
+        "place": 4,
+        "pct": 7.5
+      },
+      {
+        "place": 5,
+        "pct": 5.85
+      },
+      {
+        "place": 6,
+        "pct": 4.675
+      },
+      {
+        "place": 7,
+        "pct": 3.975
+      },
+      {
+        "place": 8,
+        "pct": 3.45
+      },
+      {
+        "place": 9,
+        "pct": 3.05
+      },
+      {
+        "place": 10,
+        "pct": 2.75
+      },
+      {
+        "place": 11,
+        "pct": 2.75
+      },
+      {
+        "place": 12,
+        "pct": 2.75
+      },
+      {
+        "place": 13,
+        "pct": 2.5
+      }
+    ]
+  },
+  "prize_pool_pct": 85,
+  "timer_running": false,
+  "timer_wall_start": null,
+  "elapsed_at_start": 0,
+  "break_wall_start": null,
+  "break_elapsed_at_start": 0,
+  "total_at_start": 0,
+  "addon_allowed": false,
+  "addon_chips": 5000,
+  "addon_cost": 30,
+  "addon_level_limit": 6,
+  "addon_period_active": true,
+  "player_db": {},
+  "display_ticker": "",
+  "display_ticker_enabled": false,
+  "display_views": [
+    "timer",
+    "blinds",
+    "prizes"
+  ],
+  "display_view_interval": 15,
+  "blind_templates": {},
+  "tables": [],
+  "table_size": 9
+}

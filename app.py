@@ -276,7 +276,7 @@ with st.sidebar:
 
     with st.expander("📧 Cuenta de envío", expanded=False):
         cfg = data["config_email"]
-        cfg["email_from"]  = st.text_input("Email remitente", cfg.get("email_from",""), placeholder="tucuenta@gmail.com")
+        cfg["email_from"]  = st.text_input("Email remitente", cfg.get("email_from",""), placeholder="oscaresotelo@gmail.com")
         cfg["password"]    = st.text_input("Contraseña / App Password", cfg.get("password",""), type="password")
         cfg["smtp_server"] = st.text_input("Servidor SMTP", cfg.get("smtp_server","smtp.gmail.com"))
         cfg["smtp_port"]   = st.number_input("Puerto", value=int(cfg.get("smtp_port",587)), step=1)

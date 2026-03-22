@@ -1,0 +1,3 @@
+3/17/2026 9:10:28 AM UNIT:[Unit1.pas] ERROR:No se puede cambiar la contraseña en una base de datos compartida abierta
+3/17/2026 9:10:33 AM UNIT:[Unit1.pas] ERROR:No se puede cambiar la contraseña en una base de datos compartida abierta
+3/17/2026 9:10:36 AM UNIT:[Unit1.pas] ERROR:No se puede cambiar la contraseña en una base de datos compartida abierta
