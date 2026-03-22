@@ -1275,11 +1275,14 @@ if nav == "🕐 Torneo en Vivo":
                     border:1px solid #374151; border-radius:16px;
                     padding:1.5rem 1rem; text-align:center;">
             <div style="font-family:'Rajdhani',sans-serif; font-size:1.5rem;
-                        letter-spacing:4px; color:#b0b8c8; margin-bottom:0.6rem; font-weight:700;">JUGADORES</div>
-            <div style="font-family:'Bebas Neue',cursive; font-size:4rem;
-                        color:#22c55e; line-height:1;">{n_active}</div>
-            <div style="font-family:'Rajdhani',sans-serif; font-size:1.6rem;
-                        color:#b0b8c8; letter-spacing:2px;">{eliminated_display} eliminados</div>
+                        letter-spacing:4px; color:#b0b8c8; margin-bottom:0.4rem; font-weight:700;">JUGADORES</div>
+            <div style="font-family:'Bebas Neue',cursive; line-height:1; margin-bottom:0.3rem;">
+                <span style="font-size:4.5rem; color:#22c55e;">{n_active}</span>
+                <span style="font-size:2.5rem; color:#4b5563;"> / </span>
+                <span style="font-size:2.8rem; color:#9ca3af;">{n_total}</span>
+            </div>
+            <div style="font-family:'Rajdhani',sans-serif; font-size:1rem;
+                        color:#6b7280; letter-spacing:2px;">jugando / inscriptos</div>
         </div>
         """, unsafe_allow_html=True)
         if nb:

@@ -1,5 +1,66 @@
 {
-  "players": [],
+  "players": [
+    {
+      "id": 1,
+      "name": "carlos",
+      "seat": 1,
+      "chips": 10000,
+      "status": "active",
+      "buy_ins": 1,
+      "paid_amount": 50,
+      "payment_method": "Efectivo",
+      "rebuys": 0,
+      "rebuy_history": [],
+      "position": null,
+      "bounty": 0,
+      "added_at": "19:18"
+    },
+    {
+      "id": 2,
+      "name": "jose",
+      "seat": 1,
+      "chips": 10000,
+      "status": "active",
+      "buy_ins": 1,
+      "paid_amount": 50,
+      "payment_method": "Efectivo",
+      "rebuys": 0,
+      "rebuy_history": [],
+      "position": null,
+      "bounty": 0,
+      "added_at": "19:19"
+    },
+    {
+      "id": 3,
+      "name": "pablo",
+      "seat": 1,
+      "chips": 0,
+      "status": "eliminated",
+      "buy_ins": 1,
+      "paid_amount": 50,
+      "payment_method": "Efectivo",
+      "rebuys": 2,
+      "rebuy_history": [
+        {
+          "amount": 30,
+          "chips": 5000,
+          "time": "19:19",
+          "level": 1,
+          "payment_method": "Efectivo"
+        },
+        {
+          "amount": 30,
+          "chips": 5000,
+          "time": "19:19",
+          "level": 1,
+          "payment_method": "Efectivo"
+        }
+      ],
+      "position": 3,
+      "bounty": 0,
+      "added_at": "19:19"
+    }
+  ],
   "bets": [],
   "blind_levels": [
     {
@@ -231,13 +292,43 @@
       "time": "18:45:02",
       "msg": "📋 Estructura EPL cargada — Breaks: Nv.6 (15min), Nv.12 (15min), Nv.18 (45min), Nv.24 (15min)",
       "kind": "info"
+    },
+    {
+      "time": "19:18:51",
+      "msg": "👤 carlos se unió al torneo — Cobrado: $50 (Efectivo) Mesa 1",
+      "kind": "info"
+    },
+    {
+      "time": "19:19:03",
+      "msg": "👤 jose se unió al torneo — Cobrado: $50 (Efectivo) Mesa 1",
+      "kind": "info"
+    },
+    {
+      "time": "19:19:09",
+      "msg": "👤 pablo se unió al torneo — Cobrado: $50 (Efectivo) Mesa 1",
+      "kind": "info"
+    },
+    {
+      "time": "19:19:16",
+      "msg": "🔄 pablo hizo rebuy — $30 (Efectivo) +5,000 chips",
+      "kind": "info"
+    },
+    {
+      "time": "19:19:41",
+      "msg": "🔄 pablo hizo rebuy — $30 (Efectivo) +5,000 chips",
+      "kind": "info"
+    },
+    {
+      "time": "19:20:38",
+      "msg": "💀 pablo eliminado en posición #3",
+      "kind": "info"
     }
   ],
   "hand_count": 0,
   "break_active": false,
   "break_duration": 15,
   "break_elapsed": 0,
-  "player_id_counter": 1,
+  "player_id_counter": 4,
   "sound_muted": false,
   "tournament_start_time": null,
   "total_elapsed_seconds": 0,

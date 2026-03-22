@@ -183,10 +183,14 @@ if current_view == "timer" or break_active:
         st.markdown(f'''<div style="background:linear-gradient(135deg,#1a2a1e,#0d1f14);border:1px solid #374151;
             border-radius:16px;padding:1.5rem 1rem;text-align:center;">
             <div style="font-family:'Rajdhani',sans-serif;font-size:1.6rem;letter-spacing:4px;
-                color:var(--text-dim);margin-bottom:0.3rem;font-weight:700;">JUGADORES</div>
-            <div style="font-family:'Bebas Neue',cursive;font-size:6rem;color:#22c55e;line-height:1;">{n_active}</div>
-            <div style="font-family:'Rajdhani',sans-serif;font-size:1.5rem;color:var(--text-dim);
-                letter-spacing:2px;">{elim_display} eliminados</div></div>''', unsafe_allow_html=True)
+                color:var(--text-dim);margin-bottom:0.4rem;font-weight:700;">JUGADORES</div>
+            <div style="font-family:'Bebas Neue',cursive;line-height:1;margin-bottom:0.3rem;">
+                <span style="font-size:6rem;color:#22c55e;">{n_active}</span>
+                <span style="font-size:3rem;color:#4b5563;"> / </span>
+                <span style="font-size:3.5rem;color:#9ca3af;">{n_total}</span>
+            </div>
+            <div style="font-family:'Rajdhani',sans-serif;font-size:1.1rem;color:#6b7280;
+                letter-spacing:2px;">jugando / inscriptos</div></div>''', unsafe_allow_html=True)
         if nb:
             st.markdown(f'''<div style="margin-top:0.6rem;padding:0.7rem 0.8rem;background:rgba(37,99,235,0.08);
                 border:1px dashed #2563eb;border-radius:10px;text-align:center;">
