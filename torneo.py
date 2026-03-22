@@ -376,10 +376,10 @@ section[data-testid="stSidebar"] .stRadio [data-testid="stMarkdownContainer"] p 
 # ─── SESSION STATE INIT ────────────────────────────────────────────────────────
 def get_default_blind_templates():
     return {
-        "Estándar (15 min)": get_default_blinds(),
-        "Turbo (8 min)": [{**b, "duration": 8} for b in get_default_blinds()],
-        "Hyper (5 min)":  [{**b, "duration": 5} for b in get_default_blinds()],
-        "Deep Stack (20 min)": [{**b, "duration": 20} for b in get_default_blinds()],
+        "EPL — 25 min (imagen)":   get_default_blinds(),
+        "Turbo (8 min)":           [{**b, "duration": 8}  for b in get_default_blinds()],
+        "Hyper (5 min)":           [{**b, "duration": 5}  for b in get_default_blinds()],
+        "Deep Stack (30 min)":     [{**b, "duration": 30} for b in get_default_blinds()],
     }
 
 def init_state():
@@ -580,43 +580,42 @@ def get_default_prize_percentages():
     }
 
 def get_default_blinds():
+    """Estructura EPL: 29 niveles de 40 min, BB Ante = Big Blind."""
     return [
-        {"level": 1,  "small": 25,     "big": 50,     "ante": 0,      "duration": 15},
-        {"level": 2,  "small": 50,     "big": 100,    "ante": 0,      "duration": 15},
-        {"level": 3,  "small": 75,     "big": 150,    "ante": 25,     "duration": 15},
-        {"level": 4,  "small": 100,    "big": 200,    "ante": 25,     "duration": 15},
-        {"level": 5,  "small": 150,    "big": 300,    "ante": 50,     "duration": 15},
-        {"level": 6,  "small": 200,    "big": 400,    "ante": 50,     "duration": 15},
-        {"level": 7,  "small": 300,    "big": 600,    "ante": 75,     "duration": 15},
-        {"level": 8,  "small": 400,    "big": 800,    "ante": 100,    "duration": 15},
-        {"level": 9,  "small": 500,    "big": 1000,   "ante": 100,    "duration": 20},
-        {"level": 10, "small": 600,    "big": 1200,   "ante": 200,    "duration": 20},
-        {"level": 11, "small": 800,    "big": 1600,   "ante": 200,    "duration": 20},
-        {"level": 12, "small": 1000,   "big": 2000,   "ante": 300,    "duration": 20},
-        {"level": 13, "small": 1500,   "big": 3000,   "ante": 400,    "duration": 20},
-        {"level": 14, "small": 2000,   "big": 4000,   "ante": 500,    "duration": 25},
-        {"level": 15, "small": 3000,   "big": 6000,   "ante": 6000,   "duration": 25},
-        {"level": 16, "small": 4000,   "big": 8000,   "ante": 8000,   "duration": 25},
-        {"level": 17, "small": 5000,   "big": 10000,  "ante": 10000,  "duration": 25},
-        {"level": 18, "small": 6000,   "big": 12000,  "ante": 12000,  "duration": 25},
-        {"level": 19, "small": 7000,   "big": 14000,  "ante": 14000,  "duration": 25},
-        {"level": 20, "small": 8000,   "big": 16000,  "ante": 16000,  "duration": 25},
-        {"level": 21, "small": 10000,  "big": 20000,  "ante": 20000,  "duration": 25},
-        {"level": 22, "small": 12000,  "big": 24000,  "ante": 24000,  "duration": 25},
-        {"level": 23, "small": 15000,  "big": 30000,  "ante": 30000,  "duration": 25},
-        {"level": 24, "small": 20000,  "big": 40000,  "ante": 40000,  "duration": 25},
-        {"level": 25, "small": 25000,  "big": 50000,  "ante": 50000,  "duration": 25},
-        {"level": 26, "small": 30000,  "big": 60000,  "ante": 60000,  "duration": 25},
-        {"level": 27, "small": 40000,  "big": 80000,  "ante": 80000,  "duration": 25},
-        {"level": 28, "small": 50000,  "big": 100000, "ante": 100000, "duration": 25},
-        {"level": 29, "small": 60000,  "big": 120000, "ante": 120000, "duration": 25},
-        {"level": 30, "small": 75000,  "big": 150000, "ante": 150000, "duration": 25},
-        {"level": 31, "small": 100000, "big": 200000, "ante": 200000, "duration": 25},
-        {"level": 32, "small": 125000, "big": 250000, "ante": 250000, "duration": 25},
-        {"level": 33, "small": 150000, "big": 300000, "ante": 300000, "duration": 25},
-        {"level": 34, "small": 200000, "big": 400000, "ante": 400000, "duration": 25},
-        {"level": 35, "small": 250000, "big": 500000, "ante": 500000, "duration": 25},
+        {"level":  1, "small": 100,     "big": 200,     "ante": 200,     "duration": 40},
+        {"level":  2, "small": 200,     "big": 300,     "ante": 300,     "duration": 40},
+        {"level":  3, "small": 200,     "big": 400,     "ante": 400,     "duration": 40},
+        {"level":  4, "small": 300,     "big": 500,     "ante": 500,     "duration": 40},
+        {"level":  5, "small": 300,     "big": 600,     "ante": 600,     "duration": 40},
+        {"level":  6, "small": 400,     "big": 800,     "ante": 800,     "duration": 40},
+        {"level":  7, "small": 500,     "big": 1000,    "ante": 1000,    "duration": 40},
+        {"level":  8, "small": 600,     "big": 1200,    "ante": 1200,    "duration": 40},
+        {"level":  9, "small": 1000,    "big": 1500,    "ante": 1500,    "duration": 40},
+        {"level": 10, "small": 1000,    "big": 2000,    "ante": 2000,    "duration": 40},
+        {"level": 11, "small": 1500,    "big": 2500,    "ante": 2500,    "duration": 40},
+        {"level": 12, "small": 1500,    "big": 3000,    "ante": 3000,    "duration": 40},
+        {"level": 13, "small": 2000,    "big": 4000,    "ante": 4000,    "duration": 40},
+        {"level": 14, "small": 3000,    "big": 5000,    "ante": 5000,    "duration": 40},
+        {"level": 15, "small": 3000,    "big": 6000,    "ante": 6000,    "duration": 40},
+        {"level": 16, "small": 4000,    "big": 8000,    "ante": 8000,    "duration": 40},
+        {"level": 17, "small": 5000,    "big": 10000,   "ante": 10000,   "duration": 40},
+        {"level": 18, "small": 6000,    "big": 12000,   "ante": 12000,   "duration": 40},
+        {"level": 19, "small": 10000,   "big": 15000,   "ante": 15000,   "duration": 40},
+        {"level": 20, "small": 10000,   "big": 20000,   "ante": 20000,   "duration": 40},
+        {"level": 21, "small": 15000,   "big": 25000,   "ante": 25000,   "duration": 40},
+        {"level": 22, "small": 15000,   "big": 30000,   "ante": 30000,   "duration": 40},
+        {"level": 23, "small": 20000,   "big": 40000,   "ante": 40000,   "duration": 40},
+        {"level": 24, "small": 25000,   "big": 50000,   "ante": 50000,   "duration": 40},
+        {"level": 25, "small": 30000,   "big": 60000,   "ante": 60000,   "duration": 40},
+        {"level": 26, "small": 40000,   "big": 80000,   "ante": 80000,   "duration": 40},
+        {"level": 27, "small": 50000,   "big": 100000,  "ante": 100000,  "duration": 40},
+        {"level": 28, "small": 60000,   "big": 100000,  "ante": 100000,  "duration": 40},
+        {"level": 29, "small": 100000,  "big": 150000,  "ante": 150000,  "duration": 40},
     ]
+
+def get_epl_breaks():
+    """Breaks de la estructura EPL: después de niveles 6, 12, 18 y 24."""
+    return {6: 15, 12: 15, 18: 45, 24: 15}  # nivel: duración en minutos
 
 init_state()
 
@@ -2335,16 +2334,32 @@ elif nav == "⚙️ Configuración":
                     save_state()
                     st.rerun()
         with sc3:
-            if st.button("📋 Cargar Estructura Estándar", use_container_width=True):
+            if st.button("📋 Cargar EPL (imagen)", use_container_width=True):
                 st.session_state.blind_levels = get_default_blinds()
+                # Pre-cargar breaks EPL en la configuración
+                st.session_state.break_duration = 15
+                add_alert("📋 Estructura EPL cargada — Breaks: Nv.6 (15min), Nv.12 (15min), Nv.18 (45min), Nv.24 (15min)")
                 save_state()
                 st.rerun()
         with sc4:
-            if st.button("⚡ Cargar Estructura Turbo", use_container_width=True):
+            if st.button("⚡ Cargar Turbo (8 min)", use_container_width=True):
                 turbo = [{**b, "duration": 8} for b in get_default_blinds()]
                 st.session_state.blind_levels = turbo
                 save_state()
                 st.rerun()
+
+        # ── Info de breaks EPL ─────────────────────────────────────────────
+        st.markdown("""
+        <div style="background:rgba(37,99,235,0.08);border:1px solid #2563eb33;border-radius:8px;
+                    padding:0.6rem 1rem;margin-top:0.5rem;font-size:0.88rem;color:#9ca3af;">
+            ☕ <strong style="color:#60a5fa;">Breaks EPL (manuales):</strong>
+            después del <strong>Nivel 6</strong> → 15 min &nbsp;|&nbsp;
+            después del <strong>Nivel 12</strong> → 15 min &nbsp;|&nbsp;
+            después del <strong>Nivel 18</strong> → 45 min (Dinner) &nbsp;|&nbsp;
+            después del <strong>Nivel 24</strong> → 15 min
+            <br><span style="color:#6b7280;">Usá el botón ☕ Descanso en la pantalla principal para iniciarlos en el momento correcto.</span>
+        </div>
+        """, unsafe_allow_html=True)
 
         st.markdown('</div>', unsafe_allow_html=True)
 
